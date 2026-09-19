@@ -54,7 +54,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2023-05-01' = {
       }
     ]
     oidcIssuerProfile: {
-      true
+      enabled: true
     }
     workloadIdentityEnabled: true    
     aadProfile: {
