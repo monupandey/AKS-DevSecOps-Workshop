@@ -53,7 +53,9 @@ resource aks 'Microsoft.ContainerService/managedClusters@2023-05-01' = {
         osType: 'Linux'
         mode: 'System'
       }
-    ]    
+    ]
+    enabledOIDCIssuer: true
+    workloadIdentityEnabled: true    
     aadProfile: {
       managed: true
       enableAzureRBAC: true
